@@ -1,27 +1,125 @@
 <!DOCTYPE html>
-<html>
+<html lang="ru">
 <head>
 <meta charset="UTF-8">
 <title>KIRAQ</title>
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+
 <style>
 body {
 margin:0;
+font-family: Arial, sans-serif;
 background:#0b0b0f;
 color:white;
-font-family:Arial;
-display:flex;
-justify-content:center;
-align-items:center;
-height:100vh;
+text-align:center;
 }
-h1 {
-font-size:60px;
+
+.container {
+padding:40px 20px;
+max-width:600px;
+margin:auto;
+}
+
+.logo {
+font-size:64px;
+font-weight:bold;
+letter-spacing:4px;
+}
+
+.q {
+background: linear-gradient(135deg, #8a2be2, #00cfff);
+-webkit-background-clip: text;
+-webkit-text-fill-color: transparent;
+}
+
+.subtitle {
+margin-top:10px;
+font-size:18px;
+opacity:0.8;
+}
+
+.buttons {
+margin-top:30px;
+}
+
+.btn {
+display:block;
+margin:15px auto;
+padding:15px;
+max-width:300px;
+border-radius:30px;
+text-decoration:none;
+color:white;
+font-size:18px;
+background: linear-gradient(135deg, #8a2be2, #00cfff);
+}
+
+.section {
+margin-top:50px;
+}
+
+.section h2 {
+margin-bottom:15px;
+}
+
+.list {
+opacity:0.85;
+line-height:1.8;
+}
+
+.footer {
+margin-top:60px;
+font-size:14px;
+opacity:0.5;
 }
 </style>
+
 </head>
+
 <body>
 
-<h1>KIRAQ</h1>
+<div class="container">
+
+<div class="logo">KIRA<span class="q">Q</span></div>
+
+<div class="subtitle">Технологичные аксессуары для твоих устройств</div>
+
+<div class="buttons">
+<a class="btn" href="https://t.me/USERNAME">Написать в Telegram</a>
+<a class="btn" href="https://vk.com/USERNAME">Написать в VK</a>
+</div>
+
+<div class="section">
+<h2>Мы предлагаем</h2>
+<div class="list">
+🔌 Зарядные устройства<br>
+📱 Держатели для телефонов<br>
+🔋 Аксессуары (скоро повербанки)
+</div>
+</div>
+
+<div class="section">
+<h2>Почему KIRAQ</h2>
+<div class="list">
+⚡ Быстрая зарядка<br>
+✅ Проверенное качество<br>
+💰 Доступные цены<br>
+📍 Раевский / скоро Уфа
+</div>
+</div>
+
+<div class="section">
+<h2>Контакты</h2>
+<div class="list">
+Telegram / VK — отвечаем быстро
+</div>
+</div>
+
+<div class="footer">
+© KIRAQ
+</div>
+
+</div>
 
 </body>
 </html>
