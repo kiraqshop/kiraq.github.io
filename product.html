@@ -1,0 +1,49 @@
+<!DOCTYPE html>
+<html lang="ru">
+<head>
+<meta charset="UTF-8">
+<title>Товар — KIRAQ</title>
+<link rel="stylesheet" href="style.css">
+</head>
+
+<body>
+
+<div class="product">
+
+<h2 id="name"></h2>
+<p id="price"></p>
+
+<p>Полное описание товара. Надёжный аксессуар для ежедневного использования.</p>
+
+<button onclick="buy()">Купить</button>
+
+</div>
+
+<script>
+const params = new URLSearchParams(window.location.search);
+const name = params.get("name");
+const price = params.get("price");
+
+document.getElementById("name").innerText = name;
+document.getElementById("price").innerText = "Цена: " + price + " ₽";
+
+function buy() {
+let method = prompt("Напиши: доставка или самовывоз");
+
+let address = "";
+
+if(method.toLowerCase() === "доставка"){
+address = prompt("Введите адрес доставки:");
+}else{
+address = "Самовывоз: Космонавтов 41А кв 2";
+}
+
+let text = `Заказ KIRAQ:%0AТовар: ${name}%0AЦена: ${price}₽%0AСпособ: ${method}%0AАдрес: ${address}`;
+
+window.location.href =
+"https://t.me/share/url?url=&text=" + text;
+}
+</script>
+
+</body>
+</html>
